@@ -5,6 +5,7 @@ import 'package:flutter_demo/EarthAnimation.dart';
 import 'package:flutter_demo/RainDropAnimation.dart';
 import 'package:flutter_demo/ScaleAnimation.dart';
 import 'package:flutter_demo/StarAnimation.dart';
+import 'package:flutter_demo/WaterCupAnimation.dart';
 
 import 'FlameAnimation.dart';
 import 'HeartAnimation.dart';
@@ -163,6 +164,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
               child: const Text("火苗动画"),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => WaterCupAnimation(),
+                  ),
+                );
+              },
+              child: const Text("水杯倒入水"),
             ),
           ],
         ),

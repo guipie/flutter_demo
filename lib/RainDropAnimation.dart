@@ -22,7 +22,7 @@ class _RainAnimationState extends State<RainAnimation> with SingleTickerProvider
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 10),
+      duration: const Duration(seconds: 10),
     )
       ..addListener(() {
         setState(() {
